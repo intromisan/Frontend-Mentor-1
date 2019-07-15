@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    max-width: 375px;
+}
+
+.wrapper {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.main-info {
+    margin: 30px auto;
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 30px;
+}
+
+.main-info .refund {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.main-info p {
+    font-size: 16px;
+    color: hsl(218, 22%, 67%);
+    line-height: 2;
+}
+
+.main-subscription {
+    background:  hsl(179, 62%, 43%);
+    padding: 1px 0 1px 0;
+}
+
+.main-subscription-inner {
+    margin: 29px auto 29px auto;
+}
+
+.main-subscription h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.main-subscription .price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #6edfdd;
+    margin-bottom: 10px;
+}
+
+.main-subscription .price span {
+    font-size: 2.5rem;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.main-subscription p {
+    color: #fff;
+}
