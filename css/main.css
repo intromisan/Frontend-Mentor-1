@@ -5,20 +5,29 @@
 
 body {
     font-family: 'Karla', sans-serif;
-    max-width: 375px;
+    min-width: 375px;
+    background: rgb(230,239,247);
+    margin: auto;
+}
+
+main {
+    max-width: 85%;
+    margin: 70px auto;;
+    background: white;
+    border-radius: 5px;
 }
 
 .wrapper {
     max-width: 85%;
-    margin: 0 auto;
-}
-
-.main-info {
     margin: 30px auto;
 }
 
+.main-info {
+    padding: .1px 0;
+}
+
 h1 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: hsl(179, 62%, 43%);
     margin-bottom: 25px;
@@ -28,41 +37,38 @@ h1 {
     font-size: 1.1rem;
     font-weight: 700;
     color: hsl(71, 73%, 54%);
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     line-height: 1.5;
 }
 
 .main-info p {
-    font-size: 1rem;
+    font-size: .87rem;
     color: hsl(218, 22%, 67%);
     line-height: 2;
 }
 
 .main-subscription {
     background: #2bb3b1;
-    padding: 1px 0 1px 0;
-}
-
-.main-subscription-inner {
-    margin: 29px auto 29px auto;
+    padding: .1px 0 .1px 0;
 }
 
 .main-subscription h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #fff;
     margin-bottom: 20px;
 }
 
 .main-subscription .price {
-    font-size: 1.1rem;
+    font-size: .9rem;
     font-weight: 400;
     color: #6edfdd;
     margin-bottom: 10px;
 }
 
 .main-subscription .price span {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    font-weight: 700;
     color: #fff;
     vertical-align: middle;
 }
@@ -78,7 +84,7 @@ h1 {
     border-radius: 7px;
     color: #FFFFFF;
     font-family: 'Karla', sans-serif;
-    font-size: 1.1rem;
+    font-size: .9rem;
     font-weight: 700;
     text-align: center;
     width: 100%;
@@ -99,23 +105,174 @@ h1 {
 
 .main-company {
     background: #4abebd;
-    padding: 1px 0 1px 0;
-}
-
-.main-company-inner {
-    margin: 29px auto 29px auto;
+    padding: .1px 0 .1px 0;
+    border-radius: 0 0 5px 5px;
 }
 
 .main-company h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #fff;
     margin-bottom: 20px;
 }
 
-.main-company p {
+.main-company li {
+    list-style: none;
     color: #acfafc;
-    font-size: 1rem;
+    font-size: .9rem;
     line-height: 1.5;
     font-weight: 400;
 }
+
+@media screen and (min-width: 1024px) {
+    /* * {
+        margin: 0;
+        padding: 0;
+    } */
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+    max-width: 70%;
+    }
+
+    .wrapper {
+        margin: auto 40px; 
+    }
+
+    .down-part {
+        display: flex;
+        height: 50vh;
+    }
+
+    .main-info {
+        height: 50vh;
+        display: flex;
+    }
+
+    .main-subscription {
+        width: 50%;
+        display: flex;
+    }
+
+    .main-company {
+        width: 50%;
+        display: flex;
+        border-radius: 0 0 5px 0;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    .main-info .refund {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .main-info p {
+        font-size: 1.1rem;
+    }
+    
+    .main-subscription {
+        border-bottom-left-radius: 5px; 
+    }
+    
+    .main-subscription h2 {
+        font-size: 1.2rem;
+    }
+    
+    .main-subscription .price {
+        font-size: 1rem;
+    }
+    
+    .main-subscription .price span {
+        font-size: 2.1rem;
+    }
+    
+    .main-subscription p {
+        font-size: 1rem;
+    }
+    
+    .btn-signup {
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        font-size: .9rem;
+    }
+
+    .main-company h2 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    
+    .main-company li {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    main {
+        max-width: 60%;
+    }
+
+    .wrapper {
+        margin: 40px 70px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+    
+    .main-info .refund {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .main-info p {
+        font-size: 1.4rem;
+    }
+    
+    .main-subscription {
+        border-bottom-left-radius: 5px; 
+    }
+    
+    .main-subscription h2 {
+        font-size: 1.2rem;
+    }
+    
+    .main-subscription .price {
+        font-size: 1rem;
+    }
+    
+    .main-subscription .price span {
+        font-size: 2.1rem;
+    }
+    
+    .main-subscription p {
+        font-size: 1rem;
+    }
+    
+    .btn-signup {
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        font-size: .9rem;
+    }
+
+    .main-company h2 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    
+    .main-company li {
+        font-size: .85rem;
+    }
+
+}
+
+
